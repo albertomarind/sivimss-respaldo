@@ -1,27 +1,32 @@
-# Sivimss
+# SIVIMSS
+### Versiones de tecnologías:
+- [Angular CLI](https://angular.io/): 12.0.5
+- [NodeJS](https://nodejs.org/download/release/v14.15.5/): 14.15.5
+- [PrimeNG-LTS](https://www.primefaces.org/primeng-v12-lts/#/): 12.2.5
+- [PrimeIcons](https://www.primefaces.org/primeng-v12-lts/#/icons): 4.1.0
+- [PrimeFlex](https://www.primefaces.org/primeflex/): 3.2.1
+- [TypesScript](https://www.typescriptlang.org/): 4.2.3
+- [RxJS](https://rxjs.dev/): 6.6.0
+- [Gráfica Base](https://www.gob.mx/guias/grafica/)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+### Instalación
+- Instalar NodeJS: [Descargar](https://nodejs.org/download/release/v14.15.5/)
+- Instalar Angular CLI:
+```console
+npm install -g @angular/cli@12.0.5
+```
+- Ejecutar en la raiz del proyecto:
+```console
+npm install 
+```
+- Ir a la rama en la que se desee trabajar:
+```console
+git checkout 'rama-que-usare'
+```
+- Levantar ambiente local:
+```console
+ng serve
+```
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.

@@ -1,0 +1,46 @@
+.inicio-sesion {
+    height: 100%;
+    display: grid;
+    max-width: 600px;
+    align-items: center;
+    margin: auto;
+    h1 {
+        color: #10312b;
+        margin: 0 0 20px 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+    }
+    h2 {
+        color: #272829;
+        margin: 0 0 40px 0;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 120%;
+        text-align: center;
+    }
+    a {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #2387f5;
+    }
+    button {
+        width: 170px;
+    }
+    i {
+        color: #98989a;
+    }
+    .olvidaste-contrasena {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 120%;
+        color: #1122CC;
+        margin-bottom: 5px;
+    }
+}
