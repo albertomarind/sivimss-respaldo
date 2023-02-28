@@ -13,8 +13,20 @@ import { AlertaService, TipoAlerta } from "projects/sivimss-gui/src/app/shared/a
 export class InicioSesionComponent implements OnInit {
 
   form!: FormGroup;
+  formRestContraUsuario: FormGroup;
+  formRestContraCodigo:FormGroup;
 
-  mostrarModal: boolean = false;
+  modales = {
+    cambiarContrasena: false,
+    requiereCambioContrasena: false,
+    cuentaDesactivada: false,
+    restablecerContrasena: false,
+    intentosAgotados:false
+  };
+
+  pasoRestablecerContrasena: number = 1;
+
+  usuarioRestablecer: string;
 
   constructor(
     private formBuilder: FormBuilder,
@@ -32,7 +44,15 @@ export class InicioSesionComponent implements OnInit {
   inicializarForm(): void {
     this.form = this.formBuilder.group({
       usuario: ['', Validators.required],
-      password: ['', Validators.required]
+      contrasena: ['', Validators.required]
+    });
+
+    this.formRestContraUsuario = this.formBuilder.group({
+      usuario: ['', Validators.required],
+    });
+
+    this.formRestContraCodigo = this.formBuilder.group({
+      codigo: ['', Validators.required],
     });
   }
 
@@ -63,13 +83,25 @@ export class InicioSesionComponent implements OnInit {
     // );
   }
 
+  cerrarModlRestablecerCont(){
+    this.modales.restablecerContrasena = false;
+    this.pasoRestablecerContrasena = 1;
+  }
+
   mostrarAlerta() {
     this.alertaService.mostrar(TipoAlerta.Exito, 'Mensaje de prueba', true);
-
   }
 
   get f() {
     return this.form.controls;
+  }
+
+  get frcu() {
+    return this.formRestContraUsuario.controls;
+  }
+
+  get frcc() {
+    return this.formRestContraCodigo.controls;
   }
 
 
